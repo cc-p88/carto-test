@@ -1,0 +1,13 @@
+<header>
+	<div class="u-container">
+		<a class="logo" href="{{ site.baseurl }}"><img src="/assets/images/logo.svg" alt="logo"></a>
+		<nav>
+			<ul>
+				{% for page in site.pages %} {% if page.title %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% endif %} {% endfor %}
+			</ul>
+		</nav>
+	</div>
+
+</header>

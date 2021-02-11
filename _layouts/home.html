@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body class="style-scroll">
+    {% include header.html %}
+
+    <!-- HERE IS THE CONTENT -->
+    <main>
+        <div class="u-container">
+            <div class="u-row">
+                <div class="main-col">
+                    <!-- CONFERENCE TITLE -->
+                    <h1 class="title">
+                        Lorem Ipsum Dolor Conference
+                    </h1>
+                    <h3 class="subtitle">
+                        Online
+                    </h3>
+                    <!-- TEXT -->
+                    <div class="box bg_neutral__white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa .
+                    </div>
+                    <!-- QUOUTE -->
+                    <div class="quote">
+                        <h5>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.”
+                        </h5>
+                        <p>2020 Attendee</p>
+                    </div>
+                </div>
+                <!-- IMAGES -->
+                <div class="main-col">
+                    <div class="cta-container">
+                        <button class="btn btn_primay__red">Sign up now</button>
+                    </div>
+                    <div class="front-images-container">
+                        <div class="front-images-item a-image__sm">
+                            <img class="a-image__responsive" src="/assets/images/front01.png">
+                        </div>
+                        <div id="buttonModal" class="front-images-item a-image__md">
+                            <div class="video-icn"></div>
+                            <img class="a-image__responsive" src="/assets/images/front02.png">
+                        </div>
+                        <div id="buttonModal2" class="front-images-item a-image__md">
+                            <div class="video-icn"></div>
+                            <img class="a-image__responsive" src="/assets/images/front03.png">
+                        </div>
+                        <div class="front-images-item a-image__sm">
+                            <img class="a-image__responsive" src="/assets/images/front04.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    {% include modal.html %}
+</body>
+
+</html>

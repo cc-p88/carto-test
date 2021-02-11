@@ -1,0 +1,175 @@
+/* ==========================================================================
+   #UNCLASSED TEXT ELEMENTS
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (min-width: 40em) {
+    h1 {
+        font-size: calc(5.11364vw - 0.27273rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h1 {
+        font-size: 4.8rem;
+    }
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+@media (min-width: 40em) {
+    h2 {
+        font-size: calc(4.54545vw - 0.30909rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h2 {
+        font-size: 4.2rem;
+    }
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+@media (min-width: 40em) {
+    h3 {
+        font-size: calc(3.97727vw - 0.34545rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h3 {
+        font-size: 3.6rem;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+@media (min-width: 40em) {
+    h4 {
+        font-size: calc(2.84091vw + 0.18182rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h4 {
+        font-size: 3rem;
+    }
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 40em) {
+    h5 {
+        font-size: calc(2.27273vw + 0.34545rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h5 {
+        font-size: 2.6rem;
+    }
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40em) {
+    h6 {
+        font-size: calc(1.13636vw + 0.87273rem);
+    }
+}
+
+@media (min-width: 62em) {
+    h6 {
+        font-size: 2rem;
+    }
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+@media (min-width: 40em) {
+    p {
+        margin-bottom: calc(2.27273vw - 0.65455rem);
+    }
+}
+
+@media (min-width: 62em) {
+    p {
+        margin-bottom: 1.6rem;
+    }
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: 800;
+}
+
+abbr[title],
+acronym[title] {
+    border-bottom: none;
+    text-decoration: none;
+    cursor: help;
+}
+
+sub,
+sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    vertical-align: super;
+}
+
+/* ==========================================================================
+      #UNCLASSED LINKS ELEMENTS
+      ========================================================================== */
+a {
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right
+}
+
+/* ==========================================================================
+      #ALIGNMENT
+      ========================================================================== */
+.text-center {
+    text-align: center;
+}

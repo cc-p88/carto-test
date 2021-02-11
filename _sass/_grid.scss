@@ -1,0 +1,22 @@
+.u-container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+
+    @media (min-width: 1200px) {
+        max-width: 1024px;
+    }
+}
+
+.u-row {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}

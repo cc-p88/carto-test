@@ -1,0 +1,169 @@
+/* ==========================================================================
+   #VARIABLES
+   ========================================================================== */
+
+$content-width: 800px;
+$primary-gray: #c5ccd5;
+$primary-red: #f24440;
+$secondary-blue: #162945;
+$neutral-white: #ffffff;
+$neutral-black: #000000;
+$font-style: 'Karla',
+sans-serif;
+$link-color: $neutral-white;
+
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px) !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((0: 0,
+        1: ($spacer * .5),
+        2: $spacer,
+        3: ($spacer * 1.5),
+        4: ($spacer * 3),
+        5: ($spacer * 6)), $spacers);
+
+
+/* ==========================================================================
+   #MIXINS
+   ========================================================================== */
+
+@mixin red-shadow {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $primary-red;
+        z-index: -1;
+        top: -10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $primary-gray;
+    font-family: $font-style;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $neutral-white;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   #BG
+   ========================================================================== */
+
+.bg_neutral__white {
+    background-color: $neutral-white;
+    color: $neutral-black;
+}
+
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+.btn {
+    border: 1px solid;
+    padding: 1.5rem 5rem;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.btn_primay__red {
+    border-color: $primary-red;
+    background-color: $primary-red;
+    color: $neutral-white;
+
+    &:hover {
+        border-color: $secondary-blue;
+        background-color: $secondary-blue;
+    }
+}
+
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+.a-imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.a-image__responsive {
+    width: 100%;
+    height: auto;
+}
+
+.a-image__sm {
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+}
+
+.a-image__md {
+    @media (min-width: 768px) {
+        width: 90%;
+    }
+}
+
+/* ==========================================================================
+   #SCROLL
+   ========================================================================== */
+.style-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+}
+
+.style-scroll::-webkit-scrollbar-thumb {
+    background: $neutral-white;
+    border-radius: 6px;
+}
+
+.style-scroll::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+.style-scroll::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 6px;
+}
+
+.style-scroll::-webkit-scrollbar-track:hover,
+.style-scroll::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
